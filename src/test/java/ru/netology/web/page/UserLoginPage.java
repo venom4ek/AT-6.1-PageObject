@@ -2,8 +2,9 @@ package ru.netology.web.page;
 
 import ru.netology.web.data.DataHelper;
 
-import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class UserLoginPage {
 

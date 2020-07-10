@@ -13,7 +13,6 @@ public class DataHelper {
         private String password;
     }
 
-
     public static AuthInfo getAuthInfo() {
         return new AuthInfo("vasya", "qwerty123");
     }
@@ -29,5 +28,21 @@ public class DataHelper {
 
     public static VerificationCode getVerificationCode() {
         return new VerificationCode("12345");
+    }
+
+    public static VerificationCode getInvalidVerificationCode() {
+        return new VerificationCode("12359");
+    }
+
+    public static String getCard1() {
+        return new String("5559 0000 0000 0001");
+    }
+
+    public static String getCard2() {
+        return new String("5559 0000 0000 0002");
+    }
+
+    public static String getWrongCard() {
+        return new String("5559 0000 0000 0015");
     }
 }

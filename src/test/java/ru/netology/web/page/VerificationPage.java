@@ -3,8 +3,8 @@ package ru.netology.web.page;
 import com.codeborne.selenide.SelenideElement;
 import ru.netology.web.data.DataHelper;
 
-import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.$;
 
 
 public class VerificationPage {
@@ -24,6 +24,6 @@ public class VerificationPage {
     public void invalidVerify(DataHelper.VerificationCode verificationCode) {
         codeField.setValue(verificationCode.getCode());
         verifyButton.click();
-        $("error_notification").shouldBe(visible);
+        $("[data-test-id=error-notification]").shouldBe(visible);
     }
 }
